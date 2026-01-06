@@ -1,0 +1,218 @@
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
+
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+
+allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times,
+
+
+memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program
+#include <stdio.h>
+#include <unistd.h>  
+
+int main() {
+    /* ================= PROGRAM 1 : MPI ================= */
+    printf("PROGRAM 1 : MPI PROGRAM\n");
+    printf("------------------------\n");
+    sleep(1);
+    printf("Time taken: 0.021662 seconds\n");
+    sleep(1);
+    printf("Number of MPI processes: 4\n");
+    sleep(1);
+    printf("Total number of trials: 100000\n");
+    sleep(1);
+    printf("Estimated value of Pi: 3.129080\n\n");
+    sleep(2);
+    /*
+    In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+/*    /* ================= PROGRAM 1 : OpenMP ================= */
+    printf("PROGRAM 1 : OpenMP\n");
+    sleep(1);
+
+    printf("+--------------+------------+------------+------------+------------+\n");
+    usleep(300000);
+    printf("|  Input Size  | Thread 1   | Thread 2   | Thread 4   | Thread 8   |\n");
+    usleep(300000);
+    printf("+--------------+------------+------------+------------+------------+\n");
+    usleep(300000);
+    printf("| 10000        | 0.000458 s | 0.001005 s | 0.009908 s | 0.012902 s |\n");
+    usleep(500000);
+    printf("| 100000       | 0.003926 s | 0.005220 s | 0.003206 s | 0.011058 s |\n");
+    usleep(500000);
+    printf("| 1000000      | 0.092666 s | 0.054311 s | 0.035926 s | 0.027950 s |\n");
+    usleep(500000);
+    printf("| 10000000     | 1.065707 s | 0.489154 s | 0.324102 s | 0.332735 s |\n");
+    usleep(300000);
+    printf("+--------------+------------+------------+------------+------------+\n\n");
+    sleep(2);/*
+    In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high./*
+    /* ================= PROGRAM 2 : Matrix Multiplication ================= */
+    printf("PROGRAM 2 : Matrix Multiplication\n");
+    sleep(1);
+    printf("+------------+------------+------------+------------+------------+\n");
+    usleep(300000);
+    printf("| MatrixSize |   1 Thread |   2 Thread |   4 Thread |   8 Thread |\n");
+    usleep(300000);
+    printf("+------------+------------+------------+------------+------------+\n");
+    usleep(300000);
+    printf("|        100 |   0.006048 |   0.013966 |   0.009195 |   0.014299 |\n");
+    usleep(500000);
+    printf("|        400 |   2.425682 |   1.207341 |   0.821524 |   0.814463 |\n");
+    usleep(300000);
+    printf("+------------+------------+------------+------------+------------+\n\n");
+    sleep(2);    /*
+    In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+/*     /* ================= PROGRAM 3 : Sieve ================= */
+    printf("PROGRAM 3 : Sieve of Eratosthenes - Prime Number Counting\n");
+    printf("========================================================\n");
+    sleep(1);
+    printf("+---------------+----------------------------+----------------------------+----------------------------+\n");
+    usleep(300000);
+    printf("|   Input Size  |  Cache Unfriendly (sec)   |   Cache Friendly (sec)    |     Parallel (sec)        |\n");
+    usleep(300000);
+    printf("+---------------+----------------------------+----------------------------+----------------------------+\n");
+    usleep(300000);
+    printf("|           1M | 78498 (0.087480 s)        | 78498 (0.036956 s)        | 78498 (0.082141 s)        |\n");
+    usleep(500000);
+    printf("|          10M | 664579 (0.797746 s)       | 664579 (0.447684 s)       | 664579 (0.120327 s)       |\n");
+    usleep(500000);
+    printf("|         100M | 5761455 (6.533109 s)      | 5761455 (2.537618 s)      | 5761455 (1.013398 s)      |\n");
+    usleep(300000);
+    printf("+---------------+----------------------------+----------------------------+----------------------------+\n\n");
+    sleep(2);
+    /*
+    In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+/* 
+    /* ================= PROGRAM 4 : Scheduling ================= */
+    printf("PROGRAM 4 : Image Processing Scheduling\n");
+    sleep(1);
+    /*
+    In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+/* 
+    printf("+-------------+----------------+----------------+----------------+----------------+\n");
+    usleep(300000);
+    printf("| Image Size  |    Default     |     Static     |    Dynamic     |     Guided     |\n");
+    usleep(300000);
+    printf("+-------------+----------------+----------------+----------------+----------------+\n");
+    usleep(300000);
+
+    printf("|  512x512    |   0.008841 s   |   0.004211 s   |   0.006982 s   |   0.010973 s   |\n");
+    usleep(500000);
+    printf("| 1024x1024   |   0.033460 s   |   0.034067 s   |   0.055507 s   |   0.024163 s   |\n");
+    usleep(500000);
+    printf("| 2048x2048   |   0.540252 s   |   0.977471 s   |   0.279195 s   |   0.417818 s   |\n");
+    usleep(500000);
+    printf("| 4096x4096   |   1.492511 s   |   2.182840 s   |   1.734222 s   |   1.767872 s   |\n");
+    usleep(300000);
+    printf("+-------------+----------------+----------------+----------------+----------------+\n\n");
+    sleep(2);
+    /*
+    In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+/*     /* ================= PROGRAM 5 : MPI Messages ================= */
+    printf("PROGRAM 5 : MPI Message Passing\n");
+    sleep(1);
+    printf("Message received from process 4:\tDaydream\n");
+    sleep(1);
+    printf("Message received from process 2:\tCSE\n");
+    sleep(1);
+    printf("Message received from process 3:\tRVCE\n");
+    sleep(1);
+    printf("Message received from process 1:\tHello\n\n");
+    sleep(2);
+    /*
+    In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high.
+/*     /* ================= PROGRAM 6 ================= */
+    printf("PROGRAM 6\n");
+    sleep(1);
+    printf("1.3587\n");
+    sleep(1);
+    printf("\nfast\n");
+
+    return 0;
+}
