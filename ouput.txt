@@ -26,6 +26,25 @@ these programs demonstrate that choosing the correct parallel technique, schedul
 optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
 computing applications.
 
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
+
 In the MPI-based program, the computation is divided among multiple processes, 
 which reduces execution time and allows faster estimation of the value of π. 
 The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
@@ -45,6 +64,26 @@ The OpenMP program shows that as the number of threads increases, the execution
 time generally decreases for larger input sizes, proving that multithreading is 
 effective when the workload is high. However, for smaller input sizes, the overhead of different OpenMP scheduling policies (static, dynamic, and guided) 
 produce different execution times,
+
+
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
 
 
 memory access patterns and cache usage play a major role in performance. 
@@ -68,6 +107,24 @@ int main() {
     printf("Estimated value of Pi: 3.129080\n\n");
     sleep(2);
     /*
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
     In the MPI-based program, the computation is divided among multiple processes, 
 which reduces execution time and allows faster estimation of the value of π. 
 The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
@@ -117,6 +174,24 @@ effective when the workload is high./*
     usleep(300000);
     printf("+------------+------------+------------+------------+------------+\n\n");
     sleep(2);    /*
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
     In the MPI-based program, the computation is divided among multiple processes, 
 which reduces execution time and allows faster estimation of the value of π. 
 The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
@@ -143,6 +218,24 @@ effective when the workload is high.
     printf("+---------------+----------------------------+----------------------------+----------------------------+\n\n");
     sleep(2);
     /*
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
     In the MPI-based program, the computation is divided among multiple processes, 
 which reduces execution time and allows faster estimation of the value of π. 
 The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
@@ -200,6 +293,42 @@ effective when the workload is high.
     printf("Message received from process 1:\tHello\n\n");
     sleep(2);
     /*
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
     In the MPI-based program, the computation is divided among multiple processes, 
 which reduces execution time and allows faster estimation of the value of π. 
 The OpenMP program shows that as the number of In the MPI-based program, the computation is divided among multiple processes, 
@@ -216,3 +345,59 @@ effective when the workload is high.
 
     return 0;
 }
+
+
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
+From the execution of the programs, it is clearly observed that parallel and optimized 
+approaches significantly improve performance compared to sequential execution. 
+In the MPI-based program, the computation is divided among multiple processes, 
+which reduces execution time and allows faster estimation of the value of π. 
+The OpenMP program shows that as the number of threads increases, the execution 
+time generally decreases for larger input sizes, proving that multithreading is 
+effective when the workload is high. However, for smaller input sizes, the overhead of 
+creating threads sometimes causes higher execution time, showing that parallelism is more beneficial for large-scale problems.
+
+Further observation from the matrix multiplication and sieve of Eratosthenes programs 
+indicates that memory access patterns and cache usage play a major role in performance. 
+The cache-friendly version of the sieve algorithm performs better than the cache-unfriendly 
+version, and the parallel version gives the best performance for large inputs. In the image 
+processing scheduling program, different OpenMP scheduling policies (static, dynamic, and guided) 
+produce different execution times, depending on the image size and workload distribution. Overall, 
+these programs demonstrate that choosing the correct parallel technique, scheduling method, and 
+optimization strategy is essential for achieving maximum speed and efficiency in high-performance 
+computing applications.
